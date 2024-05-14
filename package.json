@@ -1,0 +1,31 @@
+{
+  "name": "bloodbank",
+  "version": "1.0.0",
+  "description": "blood",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server.js",
+    
+    "dev": "concurrently \"npm run server\" \"npm start --prefix ./client\""
+  },
+  "author": "Vansh Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.4",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.3.3",
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.2",
+    "morgan": "^1.10.0",
+    "react-redux": "^9.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
