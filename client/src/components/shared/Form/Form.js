@@ -6,7 +6,7 @@ import { handleLogin, handleRegister } from "../../../services/authService";
 const Form = ({formType,submitbtn, formTitle}) => {
 const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
-const [role, setRole] = useState("donar");
+const [role, setRole] = useState("donor");
 const [name, setName] = useState("");
 const [organisationName, setOrganisationName] = useState("");
 const [hospitalName, setHospitalName] = useState("");
@@ -43,7 +43,7 @@ const [phone, setPhone] = useState("");
               className="form-check-input"
               name="role"
               id="donarRadio"
-              value={"donar"}
+              value={"donor"}
               onChange={(e) => setRole(e.target.value)}
               defaultChecked
             />
@@ -120,7 +120,7 @@ const [phone, setPhone] = useState("");
     case formType === "register": {
       return(
         <>
-         {(role === "admin" || role === "donar") && (
+         {(role === "admin" || role === "donor") && (
           <>
            <InputType 
     labelText="Email" 

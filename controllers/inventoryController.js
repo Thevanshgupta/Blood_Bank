@@ -3,18 +3,19 @@ const userModel = require("../models/userModel"); // Adjust the file path as per
 
 const createInventoryController = async (req, res) => {
     try {
-      const { email ,inventoryType } = req.body;
+       const { email ,inventoryType } = req.body;
+
       //validation
       const user = await userModel.findOne({ email });
       if (!user) {
         throw new Error("User Not Found");
       }
-        if (inventoryType === "in" && user.role !== "donar") {
+        if (inventoryType === "in" && user.role !== "donor") {
       throw new Error("Not a donar account");
-     }
+      }
      if (inventoryType === "out" && user.role !== "hospital") {
-       throw new Error("Not a hospital");
-     }
+        throw new Error("Not a hospital");
+      }
      //save record
      const inventory = new inventoryModel(req.body);
      await inventory.save();
@@ -40,7 +41,7 @@ const getInventoryController = async (req, res) => {
     const organizationId = req.body.organisation;
     const inventory = await inventoryModel
       .find({ organisation: organizationId })
-      .populate("donar")
+      .populate("donor")
       .populate("hospital")
       .sort({ createdAt: -1 });
     console.log("Inventory:", inventory); // Log retrieved inventory for debugging

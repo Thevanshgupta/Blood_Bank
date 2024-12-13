@@ -1,6 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit"; 
 import API from "../services/API";
 import { toast } from 'react-toastify';
+import { setUser } from './authSlice';
 
 export const userLogin = createAsyncThunk(
     "auth/login",
@@ -65,6 +66,21 @@ export const userRegister = createAsyncThunk(
         }
     }
 );
+// Example action creator to log in a user
+
+
+export const loginUser = (credentials) => async (dispatch) => {
+  try {
+    const response = await API.post('/auth/login', credentials);
+    const { user } = response.data;
+    
+    dispatch(setUser(user)); // Ensure user is correctly set in Redux store
+  } catch (error) {
+    console.error("Login Error:", error);
+    // Handle error
+  }
+};
+
 
 //current user
 export const getCurrentUser = createAsyncThunk(
