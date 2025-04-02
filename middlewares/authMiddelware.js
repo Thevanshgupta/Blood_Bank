@@ -10,6 +10,7 @@ module.exports = async (req, res, next) => {
             success: false,
             message: "Authentication failed: Invalid token",
           });
+          //ihuh
         } else {
           // Token verification successful, proceed with the decoded payload
           // For example, you can access decoded.userId here
