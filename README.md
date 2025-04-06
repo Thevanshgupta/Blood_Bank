@@ -64,42 +64,39 @@ Start Frontend (React or static):
 bash
 Copy
 Edit
-npm start
-🧪 Key Functional Modules
-Donor Module
-Add/edit donor details, blood group, contact info.
+npm start dev
+bash'''
 
-Blood Inventory Module
-Update and track available units for each blood group.
 
-Request Handling
-Accept/deny requests from hospitals or patients based on availability.
 
-Admin Panel
-Manage users, stock levels, donors, and requests.
-
-💡 Future Scope
-Integration with real-time location maps for nearby donors.
-SMS/email alerts for donation camps.
-Authentication & authorization for donors and admins.
-Data visualization dashboard for trends in demand & supply.
-
-👨‍💻 Developed By
-Vansh Gupta — Full Stack Developer
-
-📄 License
-This project is open-source and available under the MIT License.
-
-markdown
-Copy
-Edit
-
----
-
-Let me know if you want to:
-- Add a **screenshot** or **demo link**
-- Include **environment variables**
-- Create a **deployment guide**
-- Add GitHub-style **badges** (like `build`, `license`, `live demo`)
-
-Just say the word!
+### 2. 
+ 🧪 Key Functional Modules
+  Donor Module
+  Add/edit donor details, blood group, contact info.
+  
+  Blood Inventory Module
+  Update and track available units for each blood group.
+  
+  Request Handling
+  Accept/deny requests from hospitals or patients based on availability.
+  
+  Admin Panel
+  Manage users, stock levels, donors, and requests.
+  
+  💡 Future Scope
+  Integration with real-time location maps for nearby donors.
+  SMS/email alerts for donation camps.
+  Authentication & authorization for donors and admins.
+  Data visualization dashboard for trends in demand & supply.
+  
+  👨‍💻 Developed By
+  Vansh Gupta — Full Stack Developer
+  
+  📄 License
+  This project is open-source and available under the MIT License.
+  
+  markdown
+  Copy
+  Edit
+  
+  ---
