@@ -20,10 +20,10 @@ A full-stack web application built to manage blood donations and streamline oper
 | Layer        | Technology                        |
 |--------------|-----------------------------------|
 | Frontend     | HTML, CSS, JavaScript / React.js  |
-| Backend      | Node.js / Express.js              |
+| Backend      | Node.js                           |
 | Database     | MySQL / MongoDB                   |
 | APIs         | RESTful APIs                      |
-| Deployment   | Localhost / Render / Railway / IBM Cloud (optional) |
+| Deployment   | Localhost                         |
 
 ---
 
